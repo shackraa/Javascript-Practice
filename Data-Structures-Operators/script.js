@@ -29,7 +29,10 @@ const restaurant = {
   order: function(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu,[mainIndex]];
   },
-  orderDelivery
+  orderDelivery: function ({starterIndex, mainIndex, time, address}) {
+    console.log("Order received! ${this.starterM}")
+  },
+
 };
 
 const {name, openingHours, categories} = restaurant;
